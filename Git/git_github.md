@@ -43,14 +43,15 @@ $ git remote add origin 〇〇
 ### SSH鍵の生成と登録(tetsuroabe > .ssh)
 1. 鍵を生成する
 ```
-$ ssh-keygen -t rsa -b 4096 -C "メアド"
+$ ssh-keygen -t rsa -b 4096
 ```
-2. パスワードを打つ
-3. 公開鍵の情報をコピーする
+2. ファイル名を入力する（例: id_rsa）
+3. パスワードを打つ
+4. 公開鍵の情報をコピーする
 ```
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
-4. それをgithubのsettings > SSH&GPGのところから登録する
+5. それをgithubのsettings > SSH&GPGのところから登録する
 
 
 
