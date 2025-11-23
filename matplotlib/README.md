@@ -3,7 +3,7 @@
 ## 1. 白抜き
 通常プロット
 ```python
-plt.plot(x, y,'k-', color='blue', lw=2.0, alpha=0.6)
+plt.plot(x, y, color='blue', lw=2.0, alpha=0.6)
 plt.plot(x, y, 'o', color='none', markersize=8, markeredgewidth=1.5, markeredgecolor='blue', alpha=0.9)
 ```
 <div align="center">
@@ -13,10 +13,10 @@ plt.plot(x, y, 'o', color='none', markersize=8, markeredgewidth=1.5, markeredgec
 サブプロット
 ```python
 fig, axes = plt.subplots(1, 2, figsize=(15, 6))
-axes[0].plot(x, y,'k-', color='blue', lw=2.0, alpha=0.6)
+axes[0].plot(x, y, color='blue', lw=2.0, alpha=0.6)
 axes[0].plot(x, y, 'o', color='none', markersize=7, markeredgewidth=1.5, markeredgecolor='blue', alpha=0.9)
 
-axes[1].plot(x, y,'k-', color='tomato', lw=2.0, alpha=0.6)
+axes[1].plot(x, y, color='tomato', lw=2.0, alpha=0.6)
 axes[1].plot(x, y, 'o', color='none', markersize=7, markeredgewidth=1.5, markeredgecolor='tomato', alpha=0.9)
 ```
 <div align="center">
