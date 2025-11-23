@@ -3,24 +3,23 @@
 ## 1. 白抜き
 通常プロット
 ```python
-plt.plot(x, y, color='blue', lw=2.0, alpha=0.6)
-plt.plot(x, y, 'o', color='none', markersize=8, markeredgewidth=1.5, markeredgecolor='blue', alpha=0.9)
+plt.plot(x, y, marker='o', color='blue', markersize=8, markeredgewidth=1.5, mfc='white')
 ```
 <div align="center">
-    <img width="400" alt="image" src="https://github.com/user-attachments/assets/69b65b31-5169-4dcc-b743-ae5e2e5a4c07">
+    <img width="448" height="354" alt="スクリーンショット 2025-11-23 16 40 26" src="https://github.com/user-attachments/assets/1ac3fb79-f754-461c-ad4c-ed732e53e676" />
+
 </div>
 
 サブプロット
 ```python
 fig, axes = plt.subplots(1, 2, figsize=(15, 6))
-axes[0].plot(x, y, color='blue', lw=2.0, alpha=0.6)
-axes[0].plot(x, y, 'o', color='none', markersize=7, markeredgewidth=1.5, markeredgecolor='blue', alpha=0.9)
+axes[0].plot(x, y, marker='o', color='blue', markersize=8, markeredgewidth=1.5, mfc='white')
 
-axes[1].plot(x, y, color='tomato', lw=2.0, alpha=0.6)
-axes[1].plot(x, y, 'o', color='none', markersize=7, markeredgewidth=1.5, markeredgecolor='tomato', alpha=0.9)
+axes[1].plot(x, y, marker='o', color='orange', markersize=8, markeredgewidth=1.5, mfc='white')
 ```
 <div align="center">
-    <img width="700" alt="image" src="https://github.com/user-attachments/assets/27751a44-65b8-421e-a3d3-dd4c42f9f590">
+    <img width="824" height="342" alt="スクリーンショット 2025-11-23 16 41 52" src="https://github.com/user-attachments/assets/0051423b-27ff-4e85-ae83-381404862804" />
+
 </div>
 
 
