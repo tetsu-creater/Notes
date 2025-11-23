@@ -35,7 +35,31 @@ plt.colorbar(mappable1, ax=axes[0])
 plt.colorbar(mappable2, ax=axes[1])
 
 ```
-<img width="800" height="337" alt="スクリーンショット 2025-08-28 15 01 15" src="https://github.com/user-attachments/assets/42aaac1c-6319-4725-af6c-5a8bac796308" />
 
+<div align="center">
+    <img width="800" height="337" alt="スクリーンショット 2025-08-28 15 01 15" src="https://github.com/user-attachments/assets/42aaac1c-6319-4725-af6c-5a8bac796308" />
 </div>
 
+
+## 3. エラーバー
+```python
+ax.errorbar(
+    x, # 横軸
+    y, # 縦軸平均値
+    yerr=z,  # 縦軸標準偏差
+    fmt='-o',    # マーカーの形
+    color='blue,
+    mfc='white',  # 白抜き
+    mec='blue',   # marker edge color
+    ms=7,       # マーカーサイズ
+    mew=1.5,    # marker edge width
+    ecolor='blue',   # エラーバーの色
+    elinewidth=1.5,   # エラーバーの線幅
+    capsize=4,     # エラーバー先端の「帽子」
+    label="Sample 1"
+)
+```
+
+<div align="center">
+    <img width="468" height="341" alt="スクリーンショット 2025-11-23 16 50 36" src="https://github.com/user-attachments/assets/7a76513b-e521-4797-87f2-e2f80144f049" />
+</div>
